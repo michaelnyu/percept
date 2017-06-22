@@ -1,0 +1,21 @@
+{
+  "name": "lahacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "flickrapi": "^0.6.0",
+    "js-priority-queue": "^0.1.5",
+    "request": "^2.81.0",
+    "requests": "^0.1.7"
+  }
+}

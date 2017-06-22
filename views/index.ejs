@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>LA Hacks 2017</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='/css/styles.css' />
+</head>
+<body class="test">
+    <div class="searchbar">
+        <div class="container">
+            <div id = "title"><h1>LAAAHHHHHH HACKS</h1></div>
+
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col-lg-6">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputlocation" autocomplete="off" placeholder="Search for a Location" aria-label="...">
+                        <div class="input-group-btn">
+                            <button type="button" id="advanced" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Location <span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li class="adv-input"><input placeholder = "Latitude" name='lat' type='text' id='lat'/></li>
+                                <li class="adv-input"><input placeholder = "Longtitude"name='lon' type='text' id='lon'/></li>
+                                <li class="adv-input"><input placeholder = "Radius"name='radius' type='number' step='0.01' min='0.05' /></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div><!-- /input-group -->
+                </div>
+                <div class="col-lg-4">
+                    <input type="text" class="form-control" name="tags" placeholder="What kind of photos?">
+                </div><!-- /.col-lg-6 -->
+                <button id="search" class="inputText col-lg-2">Search</button>
+                <div class="row" id="locationAutofill">
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container" id="results">
+
+            <ul class="nav nav-pills" id="pills">
+            </ul>
+            <div id = 'mountPoint'>
+            </div>
+        </div>
+    </body>
+    <script src="/js/main.js"></script>
+    <script src="/js/googlemaps.js"></script>
+    </html>
